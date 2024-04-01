@@ -79,3 +79,17 @@ input {
   justify-content: space-around;
   margin-bottom: 5px;
 }
+
+.showError {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 63, 63);
+  font-size: 12px;
+}
+
+.showSuccess {
+  display: flex;
+  flex-direction: column;
+  color: #52c452;
+  font-size: 12px;
+}
