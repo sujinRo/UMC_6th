@@ -6,6 +6,10 @@ const age = document.getElementById('age');
 const pwd = document.getElementById('pwd');
 const rePwd = document.getElementById('rePwd');
 
+//modal
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('button.closeBtn');
+
 //유효성 검사 여부
 let isName = false;
 let isEmail = false;
@@ -119,6 +123,15 @@ form.addEventListener('submit', e => {
   checkPwdMatch(pwd, rePwd);
 
   if (isName && isEmail && isAge && isPwd && isRePwd) {
-    alert('success');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  } else {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
   }
+});
+
+closeBtn.addEventListener('click', function () {
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
 });
