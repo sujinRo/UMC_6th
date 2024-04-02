@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('/Pretendard-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(254, 255, 223);
+  font-family: 'Pretendard-Regular';
+  color: rgb(31, 31, 31);
+}
+
+.box {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.subTitle {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border: none;
+  margin: 40px 0 15px 0;
+}
+
+input {
+  width: 600px;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px rgb(188, 188, 188) solid;
+  outline: none;
+  font-size: 13px;
+  padding-left: 8px;
+}
+
+.planBox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.todo,
+.done {
+  width: 295px;
+  height: 400px;
+  background-color: white;
+}
