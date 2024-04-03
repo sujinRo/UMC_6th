@@ -81,7 +81,8 @@ input {
   background-color: white;
 }
 
-.todoList {
+.todoList,
+.doneList {
   width: 250px;
   height: 310px;
   display: flex;
@@ -92,5 +93,8 @@ input {
   scrollbar-width: none;
   gap: 8px;
   font-size: 13px;
+}
+
+.todoList li {
   cursor: pointer;
 }
