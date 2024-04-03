@@ -12,9 +12,18 @@ function enterkey() {
 
       todo.addEventListener('click', () => {
         let done = document.createElement('li');
+        let partOne = document.createElement('div');
         let value = todo.innerText;
         let text = document.createTextNode('☑ ' + value.replace('☐ ', ''));
-        done.appendChild(text);
+        partOne.appendChild(text);
+        let partTwo = document.createElement('div');
+        let deleteBtn = document.createTextNode('✕');
+        partTwo.appendChild(deleteBtn);
+        partTwo.setAttribute('class', 'delete');
+        partTwo.addEventListener('click', () => {
+          done.remove(text);
+        });
+        done.append(partOne, partTwo);
         doneList.appendChild(done);
         todo.remove(text);
       });

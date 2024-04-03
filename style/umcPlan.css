@@ -32,11 +32,11 @@ body {
 
 .subTitle {
   width: 100%;
-  height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 14px;
+  font-weight: 800;
+  margin: 20px 0 5px 0;
 }
 
 .long {
@@ -96,5 +96,15 @@ input {
 }
 
 .todoList li {
+  cursor: pointer;
+}
+
+.doneList li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete {
   cursor: pointer;
 }
