@@ -8,11 +8,19 @@
   <body>
     <div class="box">
       <div class="title">UMC Study Plan</div>
-      <hr />
-      <input type="text" id="text" placeholder="스터디 계획을 작성해보세요!" />
+      <hr class="long" />
+      <input type="text" id="text" placeholder="스터디 계획을 작성해보세요!" onkeyup="enterkey()" />
       <div class="planBox">
-        <div class="todo"><div class="subTitle">해야 할 일</div></div>
-        <div class="done"><div class="subTitle">해낸 일</div></div>
+        <div class="todo">
+          <div class="subTitle">해야 할 일</div>
+          <hr class="mini" />
+          <ul class="todoList"></ul>
+        </div>
+        <div class="done">
+          <div class="subTitle">해낸 일</div>
+          <hr class="mini" />
+          <ul class="doneList"></ul>
+        </div>
       </div>
     </div>
     <script src="./js/umcPlan.js"></script>
