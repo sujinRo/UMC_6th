@@ -1,2 +1,2 @@
 # UMC_6th
-join / todo_list => vanilla js
+vanilla js를 이용한 join / todo_list
